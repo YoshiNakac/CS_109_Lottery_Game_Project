@@ -1,0 +1,123 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: hsl(121, 61%, 36%);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: hsl(0, 83%, 42%);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  color: hsl(57, 81%, 48%);
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+button {
+  background-color: hsl(57, 81%, 48%);
+  color: hsl(121, 61%, 36%);
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d04520; 
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 8px 0;
+  color: #333;
+}
+
+#prizeList {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+#prizeList li {
+  margin: 5px 0;
+  color: hsl(57, 81%, 48%);;
+}
+
+.result-container {
+  border: 2px solid #333;
+  padding: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.lottery-ball {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #4285f4;
+  color: white;
+  font-size: 18px;
+  line-height: 30px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.user-ball {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #ea4335;
+  color: white;
+  font-size: 18px;
+  line-height: 30px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+#counter {
+  font-size: 24px; /* Increase font size */
+  font-weight: bold; 
+  color: #ffffff; 
+  margin-top: 20px;
+  padding: 10px;
+  background-color: hsl(121, 61%, 36%); 
+  border-radius: 5px;
+}
+
+/* Add a subtle shadow to the counter for emphasis */
+#counter:hover {
+  box-shadow: 0 0 10px rgba(234, 234, 12, 0.3);
+}

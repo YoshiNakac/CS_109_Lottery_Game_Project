@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lottery Simulator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Lottery Simulator</h1>
+    <label for="ballCount">Choose the number of balls (3-6):</label>
+    <input type="number" id="ballCount" min="3" max="6" value="3">
+    <br>
+    <label for="ballValues">Enter values for each ball (1-5)(comma-separated):</label>
+    <input type="text" id="ballValues" placeholder="e.g., 1,2,3">
+    <br>
+    <button onclick="simulateLottery()">You know you want to draw!</button>
+
+    <ul id="prizeList">
+      <li>Prize for 3 balls: $250 (Cost: $10)</li>
+      <li>Prize for 4 balls: $3000 (Cost: $8)</li>
+      <li>Prize for 5 balls: $6,500 (Cost: $5)</li>
+      <li>Prize for 6 balls: $40,000 (Cost: $2)</li>
+    </ul>
+    <div id="result" class="result-container">
+      <!-- Lottery Draw Result will be dynamically inserted here -->
+    </div>
+    <div id="counter">Total Earnings/Losses: $0</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
